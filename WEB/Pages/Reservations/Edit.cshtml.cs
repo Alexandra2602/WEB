@@ -58,7 +58,7 @@ namespace WEB.Pages.Reservations
                 ReservationToUpdate,
                 "Reservation",
                 i => i.FirstName, i => i.LastName,
-            i => i.CheckinDate, i => i.CheckoutDate, i => i.RoomsNr, i => i.Room))
+            i => i.CheckinDate, i => i.CheckoutDate, i => i.RoomsNr, i => i.RoomID))
             {
                 UpdateReservationCategories(_context, selectedCategories, ReservationToUpdate);
                 await _context.SaveChangesAsync();

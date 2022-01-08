@@ -18,7 +18,7 @@ namespace WEB.Models
         [DataType(DataType.Date)]
         public DateTime CheckinDate { get; set; }
         public DateTime CheckoutDate { get; set; }
-        [Display(Name = "Number of rooms")]
+        [Display(Name = "NumberOfRooms")]
         public int RoomsNr { get; set; }
 
         public int RoomID { get; set; }

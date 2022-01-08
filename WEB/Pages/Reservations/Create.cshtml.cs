@@ -25,7 +25,6 @@ namespace WEB.Pages.Reservations
             var reservation = new Reservation();
             reservation.ReservationCategories = new List<ReservationCategory>();
             PopulateAssignedCategoryData(_context, reservation);
-
             return Page();
         }
 
@@ -53,7 +52,7 @@ namespace WEB.Pages.Reservations
                 newReservation,
                 "Reservation",
                 i => i.FirstName, i => i.LastName,
-                 i => i.CheckinDate, i => i.CheckoutDate, i => i.RoomsNr  ))
+                 i => i.CheckinDate, i => i.CheckoutDate, i => i.RoomsNr, i =>i.RoomID))
             {
                 _context.Reservation.Add(newReservation);
                 await _context.SaveChangesAsync();

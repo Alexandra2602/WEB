@@ -15,8 +15,8 @@ namespace WEB.Data
         }
 
         public DbSet<WEB.Models.Reservation> Reservation { get; set; }
-
-        public DbSet<WEB.Models.Room> Room { get; set; }
+        
+        public DbSet<WEB.Models.Room> Room{ get; set; }
 
         public DbSet<WEB.Models.Category> Category { get; set; }
     }
